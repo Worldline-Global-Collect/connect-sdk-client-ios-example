@@ -1,0 +1,1076 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29CEF5197E26824532029C01 /* WCPaymentProductInputData.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CEF26138AC6A3824CB8AFE /* WCPaymentProductInputData.m */; };
+		29CEF72C43206D38FE5C1672 /* WCFormRowCoBrandsSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CEF711BEED4F2A40288853 /* WCFormRowCoBrandsSelection.m */; };
+		29CEFBDCF697210B2060494B /* WCFormRowCoBrandsExplanation.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CEF555BCA4F1D1A546CDCC /* WCFormRowCoBrandsExplanation.m */; };
+		29CEFDD0A7B51E7EA8478E0A /* WCCoBrandsSelectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CEF5968DC8D58411146C55 /* WCCoBrandsSelectionTableViewCell.m */; };
+		29CEFE47E7CE615D9DA6C57B /* WCCOBrandsExplanationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CEFC6ED730845B1C281F17 /* WCCOBrandsExplanationTableViewCell.m */; };
+		42974C791DC8A56300B91814 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42974C781DC8A56300B91814 /* PassKit.framework */; };
+		42974C7E1DC8ABD200B91814 /* WCPaymentProductsViewControllerTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 42974C7D1DC8ABD200B91814 /* WCPaymentProductsViewControllerTarget.m */; };
+		7321EB9F1F18AF3D006B66C4 /* WCBancontactProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7321EB9E1F18AF3D006B66C4 /* WCBancontactProductViewController.m */; };
+		733256D91EDFF6660036F267 /* WCBoletoProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 733256D81EDFF6660036F267 /* WCBoletoProductViewController.m */; };
+		7333B7261F8B7B1500B0A81F /* WCFormRowDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7333B7251F8B7B1500B0A81F /* WCFormRowDate.m */; };
+		7333B7291F8B7C6B00B0A81F /* WCDatePickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7333B7281F8B7C6B00B0A81F /* WCDatePickerTableViewCell.m */; };
+		736155F81F18C47300D9DF6C /* WCExternalAppStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 736155F71F18C47300D9DF6C /* WCExternalAppStatusViewController.m */; };
+		736155FC1F18CAE800D9DF6C /* WCCheckMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 736155FB1F18CAE800D9DF6C /* WCCheckMarkView.m */; };
+		736155FF1F18CD2E00D9DF6C /* WCStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 736155FE1F18CD2E00D9DF6C /* WCStatusView.m */; };
+		736156031F18EA0A00D9DF6C /* WCFormRowImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 736156021F18EA0A00D9DF6C /* WCFormRowImage.m */; };
+		736156061F18EB4600D9DF6C /* WCFormRowQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 736156051F18EB4600D9DF6C /* WCFormRowQRCode.m */; };
+		736156091F18EFAE00D9DF6C /* WCFormRowSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 736156081F18EFAE00D9DF6C /* WCFormRowSeparator.m */; };
+		73814C471F18F4CE00036D6F /* WCImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73814C461F18F4CE00036D6F /* WCImageTableViewCell.m */; };
+		73814C4A1F18FB2400036D6F /* WCSeparatorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73814C491F18FB2400036D6F /* WCSeparatorTableViewCell.m */; };
+		73814C4D1F18FB3800036D6F /* WCLogoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73814C4C1F18FB3800036D6F /* WCLogoTableViewCell.m */; };
+		73814C501F1906DE00036D6F /* WCFormRowSmallLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 73814C4F1F1906DE00036D6F /* WCFormRowSmallLogo.m */; };
+		73814C531F190B3000036D6F /* WCSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73814C521F190B3000036D6F /* WCSeparatorView.m */; };
+		7399D4C31ECDA052005B888A /* WCCardProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7399D4C21ECDA052005B888A /* WCCardProductViewController.m */; };
+		73AC76571F33142900BA563C /* WCFormRowReadonlyReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AC76561F33142900BA563C /* WCFormRowReadonlyReview.m */; };
+		73AC765A1F3333AF00BA563C /* WCDetailedPickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AC76591F3333AF00BA563C /* WCDetailedPickerViewCell.m */; };
+		73C6903E1F56EEC700560FD1 /* WCReadonlyReviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C6903D1F56EEC700560FD1 /* WCReadonlyReviewTableViewCell.m */; };
+		884F70FEECEEC715CC50822C /* libPods-WorldlineConnectExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C467AB48A03703580C1C156 /* libPods-WorldlineConnectExample.a */; };
+		A301867A196FBE3200EC6150 /* WCFormRowTooltip.m in Sources */ = {isa = PBXBuildFile; fileRef = A3018679196FBE3200EC6150 /* WCFormRowTooltip.m */; };
+		A3026BBC1962E88600BDE9EE /* WCSummaryTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3026BBB1962E88600BDE9EE /* WCSummaryTableHeaderView.m */; };
+		A30C8CB2196ACFEF00F1EDA3 /* WCFormRowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A30C8CB1196ACFEF00F1EDA3 /* WCFormRowLabel.m */; };
+		A30C8CB6196AD17500F1EDA3 /* WCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A30C8CB5196AD17500F1EDA3 /* WCLabel.m */; };
+		A30C8CB9196AD3A200F1EDA3 /* WCLabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A30C8CB8196AD3A200F1EDA3 /* WCLabelTableViewCell.m */; };
+		A30CB1F11963E9B3000192B3 /* WCFormRowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A30CB1F01963E9B3000192B3 /* WCFormRowButton.m */; };
+		A30CB1F51963F723000192B3 /* WCEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30CB1F41963F723000192B3 /* WCEndViewController.m */; };
+		A351DCB3196296000033E23C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A351DCB2196296000033E23C /* Foundation.framework */; };
+		A351DCB5196296000033E23C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A351DCB4196296000033E23C /* CoreGraphics.framework */; };
+		A351DCB7196296000033E23C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A351DCB6196296000033E23C /* UIKit.framework */; };
+		A351DCBF196296000033E23C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DCBE196296000033E23C /* main.m */; };
+		A351DCC5196296000033E23C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A351DCC4196296000033E23C /* Images.xcassets */; };
+		A351DD27196296220033E23C /* WCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DCE2196296220033E23C /* WCAppDelegate.m */; };
+		A351DD29196296220033E23C /* WCButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DCE6196296220033E23C /* WCButtonTableViewCell.m */; };
+		A351DD2A196296220033E23C /* WCErrorMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DCE8196296220033E23C /* WCErrorMessageTableViewCell.m */; };
+		A351DD2B196296220033E23C /* WCFormRow.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DCEA196296220033E23C /* WCFormRow.m */; };
+		A351DD2C196296220033E23C /* WCFormRowList.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DCEC196296220033E23C /* WCFormRowList.m */; };
+		A351DD2F196296220033E23C /* WCFormRowsConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DCF2196296220033E23C /* WCFormRowsConverter.m */; };
+		A351DD30196296220033E23C /* WCFormRowSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DCF4196296220033E23C /* WCFormRowSwitch.m */; };
+		A351DD31196296220033E23C /* WCFormRowTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DCF6196296220033E23C /* WCFormRowTextField.m */; };
+		A351DD33196296220033E23C /* WCTooltipTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DCFB196296220033E23C /* WCTooltipTableViewCell.m */; };
+		A351DD34196296220033E23C /* WCPaymentProductsTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DCFE196296220033E23C /* WCPaymentProductsTableRow.m */; };
+		A351DD35196296220033E23C /* WCPaymentProductsTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD00196296220033E23C /* WCPaymentProductsTableSection.m */; };
+		A351DD36196296220033E23C /* WCPaymentProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD02196296220033E23C /* WCPaymentProductsViewController.m */; };
+		A351DD38196296220033E23C /* WCPaymentProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD06196296220033E23C /* WCPaymentProductTableViewCell.m */; };
+		A351DD39196296220033E23C /* WCPaymentProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD08196296220033E23C /* WCPaymentProductViewController.m */; };
+		A351DD3A196296220033E23C /* WCPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD0B196296220033E23C /* WCPickerView.m */; };
+		A351DD3B196296220033E23C /* WCPickerViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD0D196296220033E23C /* WCPickerViewTableViewCell.m */; };
+		A351DD3E196296220033E23C /* WCStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD13196296220033E23C /* WCStartViewController.m */; };
+		A351DD3F196296220033E23C /* WCSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD15196296220033E23C /* WCSwitch.m */; };
+		A351DD40196296220033E23C /* WCSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD17196296220033E23C /* WCSwitchTableViewCell.m */; };
+		A351DD41196296220033E23C /* WCTableSectionConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD19196296220033E23C /* WCTableSectionConverter.m */; };
+		A351DD42196296220033E23C /* WCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD1B196296220033E23C /* WCTableViewCell.m */; };
+		A351DD43196296220033E23C /* WCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD1D196296220033E23C /* WCTextField.m */; };
+		A351DD44196296220033E23C /* WCTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD1F196296220033E23C /* WCTextFieldTableViewCell.m */; };
+		A351DD47196296220033E23C /* WCViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A351DD25196296220033E23C /* WCViewFactory.m */; };
+		A363FC591AA70C8200186592 /* WCAppLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A363FC261AA704DF00186592 /* WCAppLocalizable.strings */; };
+		A3BB2CED196C0E460022F63C /* WCFormRowErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BB2CEC196C0E460022F63C /* WCFormRowErrorMessage.m */; };
+		A3BB2CF4196D424E0022F63C /* WCMerchantLogoImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BB2CF3196D424E0022F63C /* WCMerchantLogoImageView.m */; };
+		A3E12FF419F5323F008E7311 /* WCFormRowCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12FF319F5323F008E7311 /* WCFormRowCurrency.m */; };
+		A3E12FF719F5364D008E7311 /* WCFormRowWithInfoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12FF619F5364D008E7311 /* WCFormRowWithInfoButton.m */; };
+		A3E12FFA19F5375A008E7311 /* WCIntegerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12FF919F5375A008E7311 /* WCIntegerTextField.m */; };
+		A3E12FFD19F5376D008E7311 /* WCFractionalTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E12FFC19F5376D008E7311 /* WCFractionalTextField.m */; };
+		A3F7E84D19F642B400FCD812 /* WCCurrencyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F7E84C19F642B400FCD812 /* WCCurrencyTableViewCell.m */; };
+		E9BB365853118C3D6D389EF7 /* WCStartPaymentParsedJsonData.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BB34482BA4392A542CB38F /* WCStartPaymentParsedJsonData.m */; };
+		E9BB3AC5A61AB73DA9DD98BF /* WCJsonDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BB3D7A974964BBDD9E9644 /* WCJsonDialogViewController.m */; };
+		F59206F71EC48A9A0000B141 /* WCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F59206F61EC48A9A0000B141 /* WCButton.m */; };
+		F5FAC2391EC47B9A001351BD /* WCFormRowField.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAC2381EC47B9A001351BD /* WCFormRowField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29CEF0B4321D4EBB1EAEE71A /* WCCOBrandsExplanationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCOBrandsExplanationTableViewCell.h; sourceTree = "<group>"; };
+		29CEF26138AC6A3824CB8AFE /* WCPaymentProductInputData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPaymentProductInputData.m; sourceTree = "<group>"; };
+		29CEF555BCA4F1D1A546CDCC /* WCFormRowCoBrandsExplanation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowCoBrandsExplanation.m; sourceTree = "<group>"; };
+		29CEF5968DC8D58411146C55 /* WCCoBrandsSelectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCoBrandsSelectionTableViewCell.m; sourceTree = "<group>"; };
+		29CEF5EEEAC44C096C5FE956 /* WCCoBrandsSelectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCoBrandsSelectionTableViewCell.h; sourceTree = "<group>"; };
+		29CEF6BD42C6EDD563A32D57 /* WCFormRowCoBrandsSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowCoBrandsSelection.h; sourceTree = "<group>"; };
+		29CEF711BEED4F2A40288853 /* WCFormRowCoBrandsSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowCoBrandsSelection.m; sourceTree = "<group>"; };
+		29CEF88F90E345EBEAEC1817 /* WCPaymentProductInputData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPaymentProductInputData.h; sourceTree = "<group>"; };
+		29CEFC2B33EE26103F2BDE0A /* WCFormRowCoBrandsExplanation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowCoBrandsExplanation.h; sourceTree = "<group>"; };
+		29CEFC6ED730845B1C281F17 /* WCCOBrandsExplanationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCOBrandsExplanationTableViewCell.m; sourceTree = "<group>"; };
+		42974C781DC8A56300B91814 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		42974C7C1DC8ABD200B91814 /* WCPaymentProductsViewControllerTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPaymentProductsViewControllerTarget.h; sourceTree = "<group>"; };
+		42974C7D1DC8ABD200B91814 /* WCPaymentProductsViewControllerTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPaymentProductsViewControllerTarget.m; sourceTree = "<group>"; };
+		42974C7F1DC8B2B600B91814 /* WCPaymentFinishedTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPaymentFinishedTarget.h; sourceTree = "<group>"; };
+		6DB7C8CF1DE717BD00892346 /* WorldlineConnectExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WorldlineConnectExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		7321EB9D1F18AF3D006B66C4 /* WCBancontactProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCBancontactProductViewController.h; sourceTree = "<group>"; };
+		7321EB9E1F18AF3D006B66C4 /* WCBancontactProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCBancontactProductViewController.m; sourceTree = "<group>"; };
+		733256D71EDFF6660036F267 /* WCBoletoProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCBoletoProductViewController.h; sourceTree = "<group>"; };
+		733256D81EDFF6660036F267 /* WCBoletoProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCBoletoProductViewController.m; sourceTree = "<group>"; };
+		7333B7241F8B7B1500B0A81F /* WCFormRowDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowDate.h; sourceTree = "<group>"; };
+		7333B7251F8B7B1500B0A81F /* WCFormRowDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowDate.m; sourceTree = "<group>"; };
+		7333B7271F8B7C6B00B0A81F /* WCDatePickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDatePickerTableViewCell.h; sourceTree = "<group>"; };
+		7333B7281F8B7C6B00B0A81F /* WCDatePickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCDatePickerTableViewCell.m; sourceTree = "<group>"; };
+		736155F61F18C47300D9DF6C /* WCExternalAppStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCExternalAppStatusViewController.h; sourceTree = "<group>"; };
+		736155F71F18C47300D9DF6C /* WCExternalAppStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCExternalAppStatusViewController.m; sourceTree = "<group>"; };
+		736155FA1F18CAE800D9DF6C /* WCCheckMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCheckMarkView.h; sourceTree = "<group>"; };
+		736155FB1F18CAE800D9DF6C /* WCCheckMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCheckMarkView.m; sourceTree = "<group>"; };
+		736155FD1F18CD2E00D9DF6C /* WCStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCStatusView.h; sourceTree = "<group>"; };
+		736155FE1F18CD2E00D9DF6C /* WCStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCStatusView.m; sourceTree = "<group>"; };
+		736156001F18D84300D9DF6C /* WCStatusViewStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCStatusViewStatus.h; sourceTree = "<group>"; };
+		736156011F18EA0A00D9DF6C /* WCFormRowImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowImage.h; sourceTree = "<group>"; };
+		736156021F18EA0A00D9DF6C /* WCFormRowImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowImage.m; sourceTree = "<group>"; };
+		736156041F18EB4600D9DF6C /* WCFormRowQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowQRCode.h; sourceTree = "<group>"; };
+		736156051F18EB4600D9DF6C /* WCFormRowQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowQRCode.m; sourceTree = "<group>"; };
+		736156071F18EFAE00D9DF6C /* WCFormRowSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowSeparator.h; sourceTree = "<group>"; };
+		736156081F18EFAE00D9DF6C /* WCFormRowSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowSeparator.m; sourceTree = "<group>"; };
+		73814C451F18F4CE00036D6F /* WCImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCImageTableViewCell.h; sourceTree = "<group>"; };
+		73814C461F18F4CE00036D6F /* WCImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCImageTableViewCell.m; sourceTree = "<group>"; };
+		73814C481F18FB2400036D6F /* WCSeparatorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSeparatorTableViewCell.h; sourceTree = "<group>"; };
+		73814C491F18FB2400036D6F /* WCSeparatorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSeparatorTableViewCell.m; sourceTree = "<group>"; };
+		73814C4B1F18FB3800036D6F /* WCLogoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLogoTableViewCell.h; sourceTree = "<group>"; };
+		73814C4C1F18FB3800036D6F /* WCLogoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLogoTableViewCell.m; sourceTree = "<group>"; };
+		73814C4E1F1906DE00036D6F /* WCFormRowSmallLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowSmallLogo.h; sourceTree = "<group>"; };
+		73814C4F1F1906DE00036D6F /* WCFormRowSmallLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowSmallLogo.m; sourceTree = "<group>"; };
+		73814C511F190B3000036D6F /* WCSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSeparatorView.h; sourceTree = "<group>"; };
+		73814C521F190B3000036D6F /* WCSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSeparatorView.m; sourceTree = "<group>"; };
+		7399D4C11ECDA052005B888A /* WCCardProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCardProductViewController.h; sourceTree = "<group>"; };
+		7399D4C21ECDA052005B888A /* WCCardProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCardProductViewController.m; sourceTree = "<group>"; };
+		73AC76551F33142900BA563C /* WCFormRowReadonlyReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowReadonlyReview.h; sourceTree = "<group>"; };
+		73AC76561F33142900BA563C /* WCFormRowReadonlyReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowReadonlyReview.m; sourceTree = "<group>"; };
+		73AC76581F3333AF00BA563C /* WCDetailedPickerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDetailedPickerViewCell.h; sourceTree = "<group>"; };
+		73AC76591F3333AF00BA563C /* WCDetailedPickerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCDetailedPickerViewCell.m; sourceTree = "<group>"; };
+		73C6903C1F56EEC700560FD1 /* WCReadonlyReviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCReadonlyReviewTableViewCell.h; sourceTree = "<group>"; };
+		73C6903D1F56EEC700560FD1 /* WCReadonlyReviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCReadonlyReviewTableViewCell.m; sourceTree = "<group>"; };
+		7C467AB48A03703580C1C156 /* libPods-WorldlineConnectExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorldlineConnectExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		953A05224E1E423E890E85DC /* Pods-WorldlineConnectExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldlineConnectExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorldlineConnectExample/Pods-WorldlineConnectExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A3018678196FBE3200EC6150 /* WCFormRowTooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowTooltip.h; sourceTree = "<group>"; };
+		A3018679196FBE3200EC6150 /* WCFormRowTooltip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowTooltip.m; sourceTree = "<group>"; };
+		A3026BBA1962E88600BDE9EE /* WCSummaryTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSummaryTableHeaderView.h; sourceTree = "<group>"; };
+		A3026BBB1962E88600BDE9EE /* WCSummaryTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSummaryTableHeaderView.m; sourceTree = "<group>"; };
+		A30C8CB0196ACFEF00F1EDA3 /* WCFormRowLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowLabel.h; sourceTree = "<group>"; };
+		A30C8CB1196ACFEF00F1EDA3 /* WCFormRowLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowLabel.m; sourceTree = "<group>"; };
+		A30C8CB4196AD17500F1EDA3 /* WCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLabel.h; sourceTree = "<group>"; };
+		A30C8CB5196AD17500F1EDA3 /* WCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLabel.m; sourceTree = "<group>"; };
+		A30C8CB7196AD3A200F1EDA3 /* WCLabelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLabelTableViewCell.h; sourceTree = "<group>"; };
+		A30C8CB8196AD3A200F1EDA3 /* WCLabelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLabelTableViewCell.m; sourceTree = "<group>"; };
+		A30CB1EF1963E9B3000192B3 /* WCFormRowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowButton.h; sourceTree = "<group>"; };
+		A30CB1F01963E9B3000192B3 /* WCFormRowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowButton.m; sourceTree = "<group>"; };
+		A30CB1F21963F657000192B3 /* WCPaymentRequestTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPaymentRequestTarget.h; sourceTree = "<group>"; };
+		A30CB1F31963F723000192B3 /* WCEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCEndViewController.h; sourceTree = "<group>"; };
+		A30CB1F41963F723000192B3 /* WCEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCEndViewController.m; sourceTree = "<group>"; };
+		A30CB1F61963F89A000192B3 /* WCContinueShoppingTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCContinueShoppingTarget.h; sourceTree = "<group>"; };
+		A351DCAF196296000033E23C /* WorldlineConnectExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldlineConnectExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A351DCB2196296000033E23C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A351DCB4196296000033E23C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A351DCB6196296000033E23C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A351DCBE196296000033E23C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A351DCC0196296000033E23C /* WorldlineConnectExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WorldlineConnectExample-Prefix.pch"; sourceTree = "<group>"; };
+		A351DCC4196296000033E23C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A351DCE1196296220033E23C /* WCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAppDelegate.h; sourceTree = "<group>"; };
+		A351DCE2196296220033E23C /* WCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCAppDelegate.m; sourceTree = "<group>"; };
+		A351DCE5196296220033E23C /* WCButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCButtonTableViewCell.h; sourceTree = "<group>"; };
+		A351DCE6196296220033E23C /* WCButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCButtonTableViewCell.m; sourceTree = "<group>"; };
+		A351DCE7196296220033E23C /* WCErrorMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCErrorMessageTableViewCell.h; sourceTree = "<group>"; };
+		A351DCE8196296220033E23C /* WCErrorMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCErrorMessageTableViewCell.m; sourceTree = "<group>"; };
+		A351DCE9196296220033E23C /* WCFormRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRow.h; sourceTree = "<group>"; };
+		A351DCEA196296220033E23C /* WCFormRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRow.m; sourceTree = "<group>"; };
+		A351DCEB196296220033E23C /* WCFormRowList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowList.h; sourceTree = "<group>"; };
+		A351DCEC196296220033E23C /* WCFormRowList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowList.m; sourceTree = "<group>"; };
+		A351DCF1196296220033E23C /* WCFormRowsConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowsConverter.h; sourceTree = "<group>"; };
+		A351DCF2196296220033E23C /* WCFormRowsConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowsConverter.m; sourceTree = "<group>"; };
+		A351DCF3196296220033E23C /* WCFormRowSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowSwitch.h; sourceTree = "<group>"; };
+		A351DCF4196296220033E23C /* WCFormRowSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowSwitch.m; sourceTree = "<group>"; };
+		A351DCF5196296220033E23C /* WCFormRowTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowTextField.h; sourceTree = "<group>"; };
+		A351DCF6196296220033E23C /* WCFormRowTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowTextField.m; sourceTree = "<group>"; };
+		A351DCFA196296220033E23C /* WCTooltipTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTooltipTableViewCell.h; sourceTree = "<group>"; };
+		A351DCFB196296220033E23C /* WCTooltipTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCTooltipTableViewCell.m; sourceTree = "<group>"; };
+		A351DCFC196296220033E23C /* WCPaymentProductSelectionTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPaymentProductSelectionTarget.h; sourceTree = "<group>"; };
+		A351DCFD196296220033E23C /* WCPaymentProductsTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPaymentProductsTableRow.h; sourceTree = "<group>"; };
+		A351DCFE196296220033E23C /* WCPaymentProductsTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPaymentProductsTableRow.m; sourceTree = "<group>"; };
+		A351DCFF196296220033E23C /* WCPaymentProductsTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPaymentProductsTableSection.h; sourceTree = "<group>"; };
+		A351DD00196296220033E23C /* WCPaymentProductsTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPaymentProductsTableSection.m; sourceTree = "<group>"; };
+		A351DD01196296220033E23C /* WCPaymentProductsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPaymentProductsViewController.h; sourceTree = "<group>"; };
+		A351DD02196296220033E23C /* WCPaymentProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPaymentProductsViewController.m; sourceTree = "<group>"; };
+		A351DD05196296220033E23C /* WCPaymentProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPaymentProductTableViewCell.h; sourceTree = "<group>"; };
+		A351DD06196296220033E23C /* WCPaymentProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPaymentProductTableViewCell.m; sourceTree = "<group>"; };
+		A351DD07196296220033E23C /* WCPaymentProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPaymentProductViewController.h; sourceTree = "<group>"; };
+		A351DD08196296220033E23C /* WCPaymentProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPaymentProductViewController.m; sourceTree = "<group>"; };
+		A351DD09196296220033E23C /* WCPaymentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPaymentType.h; sourceTree = "<group>"; };
+		A351DD0A196296220033E23C /* WCPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPickerView.h; sourceTree = "<group>"; };
+		A351DD0B196296220033E23C /* WCPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPickerView.m; sourceTree = "<group>"; };
+		A351DD0C196296220033E23C /* WCPickerViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPickerViewTableViewCell.h; sourceTree = "<group>"; };
+		A351DD0D196296220033E23C /* WCPickerViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPickerViewTableViewCell.m; sourceTree = "<group>"; };
+		A351DD12196296220033E23C /* WCStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCStartViewController.h; sourceTree = "<group>"; };
+		A351DD13196296220033E23C /* WCStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCStartViewController.m; sourceTree = "<group>"; };
+		A351DD14196296220033E23C /* WCSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSwitch.h; sourceTree = "<group>"; };
+		A351DD15196296220033E23C /* WCSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSwitch.m; sourceTree = "<group>"; };
+		A351DD16196296220033E23C /* WCSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSwitchTableViewCell.h; sourceTree = "<group>"; };
+		A351DD17196296220033E23C /* WCSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSwitchTableViewCell.m; sourceTree = "<group>"; };
+		A351DD18196296220033E23C /* WCTableSectionConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTableSectionConverter.h; sourceTree = "<group>"; };
+		A351DD19196296220033E23C /* WCTableSectionConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCTableSectionConverter.m; sourceTree = "<group>"; };
+		A351DD1A196296220033E23C /* WCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTableViewCell.h; sourceTree = "<group>"; };
+		A351DD1B196296220033E23C /* WCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCTableViewCell.m; sourceTree = "<group>"; };
+		A351DD1C196296220033E23C /* WCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTextField.h; sourceTree = "<group>"; };
+		A351DD1D196296220033E23C /* WCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCTextField.m; sourceTree = "<group>"; };
+		A351DD1E196296220033E23C /* WCTextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTextFieldTableViewCell.h; sourceTree = "<group>"; };
+		A351DD1F196296220033E23C /* WCTextFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCTextFieldTableViewCell.m; sourceTree = "<group>"; };
+		A351DD24196296220033E23C /* WCViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCViewFactory.h; sourceTree = "<group>"; };
+		A351DD25196296220033E23C /* WCViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCViewFactory.m; sourceTree = "<group>"; };
+		A351DD26196296220033E23C /* WCViewType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCViewType.h; sourceTree = "<group>"; };
+		A363FC271AA704DF00186592 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/WCAppLocalizable.strings; sourceTree = "<group>"; };
+		A3B768191962CDF6000CA526 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3BB2CEB196C0E460022F63C /* WCFormRowErrorMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowErrorMessage.h; sourceTree = "<group>"; };
+		A3BB2CEC196C0E460022F63C /* WCFormRowErrorMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowErrorMessage.m; sourceTree = "<group>"; };
+		A3BB2CF2196D424E0022F63C /* WCMerchantLogoImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCMerchantLogoImageView.h; sourceTree = "<group>"; };
+		A3BB2CF3196D424E0022F63C /* WCMerchantLogoImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCMerchantLogoImageView.m; sourceTree = "<group>"; };
+		A3E12FF219F5323F008E7311 /* WCFormRowCurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowCurrency.h; sourceTree = "<group>"; };
+		A3E12FF319F5323F008E7311 /* WCFormRowCurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowCurrency.m; sourceTree = "<group>"; };
+		A3E12FF519F5364D008E7311 /* WCFormRowWithInfoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowWithInfoButton.h; sourceTree = "<group>"; };
+		A3E12FF619F5364D008E7311 /* WCFormRowWithInfoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowWithInfoButton.m; sourceTree = "<group>"; };
+		A3E12FF819F5375A008E7311 /* WCIntegerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIntegerTextField.h; sourceTree = "<group>"; };
+		A3E12FF919F5375A008E7311 /* WCIntegerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCIntegerTextField.m; sourceTree = "<group>"; };
+		A3E12FFB19F5376D008E7311 /* WCFractionalTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFractionalTextField.h; sourceTree = "<group>"; };
+		A3E12FFC19F5376D008E7311 /* WCFractionalTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFractionalTextField.m; sourceTree = "<group>"; };
+		A3F7E84B19F642B400FCD812 /* WCCurrencyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCurrencyTableViewCell.h; sourceTree = "<group>"; };
+		A3F7E84C19F642B400FCD812 /* WCCurrencyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCurrencyTableViewCell.m; sourceTree = "<group>"; };
+		A3FE1FA31962AEC4005FF3FA /* WCAppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAppConstants.h; sourceTree = "<group>"; };
+		E9BB324177C7E5E5173C7EC4 /* WCJsonDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCJsonDialogViewController.h; sourceTree = "<group>"; };
+		E9BB34482BA4392A542CB38F /* WCStartPaymentParsedJsonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCStartPaymentParsedJsonData.m; sourceTree = "<group>"; };
+		E9BB381A2D7BDCBA3B6560C4 /* WCStartPaymentParsedJsonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCStartPaymentParsedJsonData.h; sourceTree = "<group>"; };
+		E9BB39D6B6DBCE1F6134D324 /* WCParseJsonTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCParseJsonTarget.h; sourceTree = "<group>"; };
+		E9BB3D7A974964BBDD9E9644 /* WCJsonDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCJsonDialogViewController.m; sourceTree = "<group>"; };
+		F519A9D21DBF5F2100E61034 /* WorldlineConnectExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorldlineConnectExample.entitlements; sourceTree = "<group>"; };
+		F59206F51EC48A9A0000B141 /* WCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCButton.h; sourceTree = "<group>"; };
+		F59206F61EC48A9A0000B141 /* WCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCButton.m; sourceTree = "<group>"; };
+		F5FAC2371EC47B9A001351BD /* WCFormRowField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCFormRowField.h; sourceTree = "<group>"; };
+		F5FAC2381EC47B9A001351BD /* WCFormRowField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCFormRowField.m; sourceTree = "<group>"; };
+		FB53E07B45B2C93A231624E3 /* Pods-WorldlineConnectExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldlineConnectExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldlineConnectExample/Pods-WorldlineConnectExample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A351DCAC196296000033E23C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42974C791DC8A56300B91814 /* PassKit.framework in Frameworks */,
+				A351DCB5196296000033E23C /* CoreGraphics.framework in Frameworks */,
+				A351DCB7196296000033E23C /* UIKit.framework in Frameworks */,
+				A351DCB3196296000033E23C /* Foundation.framework in Frameworks */,
+				884F70FEECEEC715CC50822C /* libPods-WorldlineConnectExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DE41F2C9F423B7E0FBEDFC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				953A05224E1E423E890E85DC /* Pods-WorldlineConnectExample.debug.xcconfig */,
+				FB53E07B45B2C93A231624E3 /* Pods-WorldlineConnectExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		42974C7B1DC8AB5400B91814 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				42974C7C1DC8ABD200B91814 /* WCPaymentProductsViewControllerTarget.h */,
+				42974C7D1DC8ABD200B91814 /* WCPaymentProductsViewControllerTarget.m */,
+			);
+			name = Targets;
+			sourceTree = "<group>";
+		};
+		736155F91F18CAC800D9DF6C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				736155FA1F18CAE800D9DF6C /* WCCheckMarkView.h */,
+				736155FB1F18CAE800D9DF6C /* WCCheckMarkView.m */,
+				736155FD1F18CD2E00D9DF6C /* WCStatusView.h */,
+				736155FE1F18CD2E00D9DF6C /* WCStatusView.m */,
+				73814C511F190B3000036D6F /* WCSeparatorView.h */,
+				73814C521F190B3000036D6F /* WCSeparatorView.m */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		A3026BB91962E86B00BDE9EE /* TableHeaderViews */ = {
+			isa = PBXGroup;
+			children = (
+				A3026BBA1962E88600BDE9EE /* WCSummaryTableHeaderView.h */,
+				A3026BBB1962E88600BDE9EE /* WCSummaryTableHeaderView.m */,
+			);
+			name = TableHeaderViews;
+			sourceTree = "<group>";
+		};
+		A30C8CB3196AD16500F1EDA3 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				A30C8CB4196AD17500F1EDA3 /* WCLabel.h */,
+				A30C8CB5196AD17500F1EDA3 /* WCLabel.m */,
+			);
+			name = Labels;
+			sourceTree = "<group>";
+		};
+		A351DCA6196296000033E23C = {
+			isa = PBXGroup;
+			children = (
+				6DB7C8CF1DE717BD00892346 /* WorldlineConnectExample-Bridging-Header.h */,
+				A351DCB8196296000033E23C /* WorldlineConnectExample */,
+				A351DCB1196296000033E23C /* Frameworks */,
+				A351DCB0196296000033E23C /* Products */,
+				2DE41F2C9F423B7E0FBEDFC6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A351DCB0196296000033E23C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A351DCAF196296000033E23C /* WorldlineConnectExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A351DCB1196296000033E23C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42974C781DC8A56300B91814 /* PassKit.framework */,
+				A351DCB2196296000033E23C /* Foundation.framework */,
+				A351DCB4196296000033E23C /* CoreGraphics.framework */,
+				A351DCB6196296000033E23C /* UIKit.framework */,
+				7C467AB48A03703580C1C156 /* libPods-WorldlineConnectExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A351DCB8196296000033E23C /* WorldlineConnectExample */ = {
+			isa = PBXGroup;
+			children = (
+				F519A9D21DBF5F2100E61034 /* WorldlineConnectExample.entitlements */,
+				A3FE1FA21962AE7E005FF3FA /* Constants */,
+				A3FE1F901962A076005FF3FA /* Models */,
+				A3FE1F8E1962A036005FF3FA /* Converters */,
+				A3FE1F8D19629FA0005FF3FA /* Factories */,
+				A3FE1F8A19629EFB005FF3FA /* Enumerations */,
+				A3FE1F8819629EC7005FF3FA /* Protocols */,
+				A3FE1F8519629E4C005FF3FA /* Views */,
+				A3FE1F8419629E44005FF3FA /* ViewControllers */,
+				A351DCE1196296220033E23C /* WCAppDelegate.h */,
+				A351DCE2196296220033E23C /* WCAppDelegate.m */,
+				A351DCC4196296000033E23C /* Images.xcassets */,
+				A351DCB9196296000033E23C /* Supporting Files */,
+			);
+			path = WorldlineConnectExample;
+			sourceTree = "<group>";
+		};
+		A351DCB9196296000033E23C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A363FC261AA704DF00186592 /* WCAppLocalizable.strings */,
+				A3B768191962CDF6000CA526 /* Info.plist */,
+				A351DCBE196296000033E23C /* main.m */,
+				A351DCC0196296000033E23C /* WorldlineConnectExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3BB2CF1196D42290022F63C /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				A3BB2CF2196D424E0022F63C /* WCMerchantLogoImageView.h */,
+				A3BB2CF3196D424E0022F63C /* WCMerchantLogoImageView.m */,
+			);
+			name = ImageViews;
+			sourceTree = "<group>";
+		};
+		A3FE1F8419629E44005FF3FA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A351DD12196296220033E23C /* WCStartViewController.h */,
+				A351DD13196296220033E23C /* WCStartViewController.m */,
+				A351DD01196296220033E23C /* WCPaymentProductsViewController.h */,
+				A351DD02196296220033E23C /* WCPaymentProductsViewController.m */,
+				A351DD07196296220033E23C /* WCPaymentProductViewController.h */,
+				A351DD08196296220033E23C /* WCPaymentProductViewController.m */,
+				A30CB1F31963F723000192B3 /* WCEndViewController.h */,
+				A30CB1F41963F723000192B3 /* WCEndViewController.m */,
+				42974C7B1DC8AB5400B91814 /* Targets */,
+				7399D4C11ECDA052005B888A /* WCCardProductViewController.h */,
+				7399D4C21ECDA052005B888A /* WCCardProductViewController.m */,
+				733256D71EDFF6660036F267 /* WCBoletoProductViewController.h */,
+				733256D81EDFF6660036F267 /* WCBoletoProductViewController.m */,
+				7321EB9D1F18AF3D006B66C4 /* WCBancontactProductViewController.h */,
+				7321EB9E1F18AF3D006B66C4 /* WCBancontactProductViewController.m */,
+				736155F61F18C47300D9DF6C /* WCExternalAppStatusViewController.h */,
+				736155F71F18C47300D9DF6C /* WCExternalAppStatusViewController.m */,
+				E9BB3D7A974964BBDD9E9644 /* WCJsonDialogViewController.m */,
+				E9BB324177C7E5E5173C7EC4 /* WCJsonDialogViewController.h */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A3FE1F8519629E4C005FF3FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				736155F91F18CAC800D9DF6C /* CustomViews */,
+				A3BB2CF1196D42290022F63C /* ImageViews */,
+				A30C8CB3196AD16500F1EDA3 /* Labels */,
+				A3026BB91962E86B00BDE9EE /* TableHeaderViews */,
+				A3FE1F8C19629F3B005FF3FA /* TextFields */,
+				A3FE1F8B19629F32005FF3FA /* PickerViews */,
+				A3FE1F8919629EE3005FF3FA /* Switches */,
+				A3FE1F8719629E5C005FF3FA /* TableViewCells */,
+				A3FE1F8619629E57005FF3FA /* Buttons */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A3FE1F8619629E57005FF3FA /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F59206F51EC48A9A0000B141 /* WCButton.h */,
+				F59206F61EC48A9A0000B141 /* WCButton.m */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		A3FE1F8719629E5C005FF3FA /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A351DD1A196296220033E23C /* WCTableViewCell.h */,
+				A351DD1B196296220033E23C /* WCTableViewCell.m */,
+				A351DCFA196296220033E23C /* WCTooltipTableViewCell.h */,
+				A351DCFB196296220033E23C /* WCTooltipTableViewCell.m */,
+				A351DD05196296220033E23C /* WCPaymentProductTableViewCell.h */,
+				A351DD06196296220033E23C /* WCPaymentProductTableViewCell.m */,
+				A351DD0C196296220033E23C /* WCPickerViewTableViewCell.h */,
+				A351DD0D196296220033E23C /* WCPickerViewTableViewCell.m */,
+				A351DD16196296220033E23C /* WCSwitchTableViewCell.h */,
+				A351DD17196296220033E23C /* WCSwitchTableViewCell.m */,
+				A351DD1E196296220033E23C /* WCTextFieldTableViewCell.h */,
+				A351DD1F196296220033E23C /* WCTextFieldTableViewCell.m */,
+				A351DCE5196296220033E23C /* WCButtonTableViewCell.h */,
+				A351DCE6196296220033E23C /* WCButtonTableViewCell.m */,
+				A351DCE7196296220033E23C /* WCErrorMessageTableViewCell.h */,
+				A351DCE8196296220033E23C /* WCErrorMessageTableViewCell.m */,
+				A30C8CB7196AD3A200F1EDA3 /* WCLabelTableViewCell.h */,
+				A30C8CB8196AD3A200F1EDA3 /* WCLabelTableViewCell.m */,
+				A3F7E84B19F642B400FCD812 /* WCCurrencyTableViewCell.h */,
+				A3F7E84C19F642B400FCD812 /* WCCurrencyTableViewCell.m */,
+				29CEF5EEEAC44C096C5FE956 /* WCCoBrandsSelectionTableViewCell.h */,
+				29CEF5968DC8D58411146C55 /* WCCoBrandsSelectionTableViewCell.m */,
+				29CEF0B4321D4EBB1EAEE71A /* WCCOBrandsExplanationTableViewCell.h */,
+				29CEFC6ED730845B1C281F17 /* WCCOBrandsExplanationTableViewCell.m */,
+				73814C451F18F4CE00036D6F /* WCImageTableViewCell.h */,
+				73814C461F18F4CE00036D6F /* WCImageTableViewCell.m */,
+				73814C481F18FB2400036D6F /* WCSeparatorTableViewCell.h */,
+				73814C491F18FB2400036D6F /* WCSeparatorTableViewCell.m */,
+				73814C4B1F18FB3800036D6F /* WCLogoTableViewCell.h */,
+				73814C4C1F18FB3800036D6F /* WCLogoTableViewCell.m */,
+				73C6903C1F56EEC700560FD1 /* WCReadonlyReviewTableViewCell.h */,
+				73C6903D1F56EEC700560FD1 /* WCReadonlyReviewTableViewCell.m */,
+				73AC76581F3333AF00BA563C /* WCDetailedPickerViewCell.h */,
+				73AC76591F3333AF00BA563C /* WCDetailedPickerViewCell.m */,
+				7333B7271F8B7C6B00B0A81F /* WCDatePickerTableViewCell.h */,
+				7333B7281F8B7C6B00B0A81F /* WCDatePickerTableViewCell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		A3FE1F8819629EC7005FF3FA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A351DCFC196296220033E23C /* WCPaymentProductSelectionTarget.h */,
+				A30CB1F21963F657000192B3 /* WCPaymentRequestTarget.h */,
+				A30CB1F61963F89A000192B3 /* WCContinueShoppingTarget.h */,
+				42974C7F1DC8B2B600B91814 /* WCPaymentFinishedTarget.h */,
+				E9BB39D6B6DBCE1F6134D324 /* WCParseJsonTarget.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		A3FE1F8919629EE3005FF3FA /* Switches */ = {
+			isa = PBXGroup;
+			children = (
+				A351DD14196296220033E23C /* WCSwitch.h */,
+				A351DD15196296220033E23C /* WCSwitch.m */,
+			);
+			name = Switches;
+			sourceTree = "<group>";
+		};
+		A3FE1F8A19629EFB005FF3FA /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				A351DD09196296220033E23C /* WCPaymentType.h */,
+				A351DD26196296220033E23C /* WCViewType.h */,
+				736156001F18D84300D9DF6C /* WCStatusViewStatus.h */,
+			);
+			name = Enumerations;
+			sourceTree = "<group>";
+		};
+		A3FE1F8B19629F32005FF3FA /* PickerViews */ = {
+			isa = PBXGroup;
+			children = (
+				A351DD0A196296220033E23C /* WCPickerView.h */,
+				A351DD0B196296220033E23C /* WCPickerView.m */,
+			);
+			name = PickerViews;
+			sourceTree = "<group>";
+		};
+		A3FE1F8C19629F3B005FF3FA /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				A351DD1C196296220033E23C /* WCTextField.h */,
+				A351DD1D196296220033E23C /* WCTextField.m */,
+				A3E12FF819F5375A008E7311 /* WCIntegerTextField.h */,
+				A3E12FF919F5375A008E7311 /* WCIntegerTextField.m */,
+				A3E12FFB19F5376D008E7311 /* WCFractionalTextField.h */,
+				A3E12FFC19F5376D008E7311 /* WCFractionalTextField.m */,
+			);
+			name = TextFields;
+			sourceTree = "<group>";
+		};
+		A3FE1F8D19629FA0005FF3FA /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				A351DD24196296220033E23C /* WCViewFactory.h */,
+				A351DD25196296220033E23C /* WCViewFactory.m */,
+			);
+			name = Factories;
+			sourceTree = "<group>";
+		};
+		A3FE1F8E1962A036005FF3FA /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE1F8F1962A056005FF3FA /* Tables */,
+			);
+			name = Converters;
+			sourceTree = "<group>";
+		};
+		A3FE1F8F1962A056005FF3FA /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				A351DCF1196296220033E23C /* WCFormRowsConverter.h */,
+				A351DCF2196296220033E23C /* WCFormRowsConverter.m */,
+				A351DD18196296220033E23C /* WCTableSectionConverter.h */,
+				A351DD19196296220033E23C /* WCTableSectionConverter.m */,
+			);
+			name = Tables;
+			sourceTree = "<group>";
+		};
+		A3FE1F901962A076005FF3FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE1F921962A099005FF3FA /* Tables */,
+				29CEF26138AC6A3824CB8AFE /* WCPaymentProductInputData.m */,
+				29CEF88F90E345EBEAEC1817 /* WCPaymentProductInputData.h */,
+				E9BB34482BA4392A542CB38F /* WCStartPaymentParsedJsonData.m */,
+				E9BB381A2D7BDCBA3B6560C4 /* WCStartPaymentParsedJsonData.h */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A3FE1F921962A099005FF3FA /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				A351DCFD196296220033E23C /* WCPaymentProductsTableRow.h */,
+				A351DCFE196296220033E23C /* WCPaymentProductsTableRow.m */,
+				A351DCFF196296220033E23C /* WCPaymentProductsTableSection.h */,
+				A351DD00196296220033E23C /* WCPaymentProductsTableSection.m */,
+				A351DCE9196296220033E23C /* WCFormRow.h */,
+				A351DCEA196296220033E23C /* WCFormRow.m */,
+				A3E12FF519F5364D008E7311 /* WCFormRowWithInfoButton.h */,
+				A3E12FF619F5364D008E7311 /* WCFormRowWithInfoButton.m */,
+				7333B7241F8B7B1500B0A81F /* WCFormRowDate.h */,
+				7333B7251F8B7B1500B0A81F /* WCFormRowDate.m */,
+				A30C8CB0196ACFEF00F1EDA3 /* WCFormRowLabel.h */,
+				A30C8CB1196ACFEF00F1EDA3 /* WCFormRowLabel.m */,
+				A351DCEB196296220033E23C /* WCFormRowList.h */,
+				A351DCEC196296220033E23C /* WCFormRowList.m */,
+				A351DCF3196296220033E23C /* WCFormRowSwitch.h */,
+				A351DCF4196296220033E23C /* WCFormRowSwitch.m */,
+				F5FAC2371EC47B9A001351BD /* WCFormRowField.h */,
+				F5FAC2381EC47B9A001351BD /* WCFormRowField.m */,
+				A351DCF5196296220033E23C /* WCFormRowTextField.h */,
+				A351DCF6196296220033E23C /* WCFormRowTextField.m */,
+				A3E12FF219F5323F008E7311 /* WCFormRowCurrency.h */,
+				A3E12FF319F5323F008E7311 /* WCFormRowCurrency.m */,
+				A30CB1EF1963E9B3000192B3 /* WCFormRowButton.h */,
+				A30CB1F01963E9B3000192B3 /* WCFormRowButton.m */,
+				A3BB2CEB196C0E460022F63C /* WCFormRowErrorMessage.h */,
+				A3BB2CEC196C0E460022F63C /* WCFormRowErrorMessage.m */,
+				A3018678196FBE3200EC6150 /* WCFormRowTooltip.h */,
+				A3018679196FBE3200EC6150 /* WCFormRowTooltip.m */,
+				29CEF711BEED4F2A40288853 /* WCFormRowCoBrandsSelection.m */,
+				29CEF6BD42C6EDD563A32D57 /* WCFormRowCoBrandsSelection.h */,
+				29CEF555BCA4F1D1A546CDCC /* WCFormRowCoBrandsExplanation.m */,
+				29CEFC2B33EE26103F2BDE0A /* WCFormRowCoBrandsExplanation.h */,
+				736156011F18EA0A00D9DF6C /* WCFormRowImage.h */,
+				736156021F18EA0A00D9DF6C /* WCFormRowImage.m */,
+				736156041F18EB4600D9DF6C /* WCFormRowQRCode.h */,
+				736156051F18EB4600D9DF6C /* WCFormRowQRCode.m */,
+				736156071F18EFAE00D9DF6C /* WCFormRowSeparator.h */,
+				736156081F18EFAE00D9DF6C /* WCFormRowSeparator.m */,
+				73814C4E1F1906DE00036D6F /* WCFormRowSmallLogo.h */,
+				73814C4F1F1906DE00036D6F /* WCFormRowSmallLogo.m */,
+				73AC76551F33142900BA563C /* WCFormRowReadonlyReview.h */,
+				73AC76561F33142900BA563C /* WCFormRowReadonlyReview.m */,
+			);
+			name = Tables;
+			sourceTree = "<group>";
+		};
+		A3FE1FA21962AE7E005FF3FA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A3FE1FA31962AEC4005FF3FA /* WCAppConstants.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A351DCAE196296000033E23C /* WorldlineConnectExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A351DCDB196296000033E23C /* Build configuration list for PBXNativeTarget "WorldlineConnectExample" */;
+			buildPhases = (
+				B9E6309AA247E971A4002740 /* [CP] Check Pods Manifest.lock */,
+				A351DCAB196296000033E23C /* Sources */,
+				A351DCAC196296000033E23C /* Frameworks */,
+				A351DCAD196296000033E23C /* Resources */,
+				398D89903C8C38578E5C9B45 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorldlineConnectExample;
+			productName = WorldlineConnectExample;
+			productReference = A351DCAF196296000033E23C /* WorldlineConnectExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A351DCA7196296000033E23C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IC;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Worldline Global Collect";
+				TargetAttributes = {
+					A351DCAE196296000033E23C = {
+						DevelopmentTeam = UTWYEN5FS2;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A351DCAA196296000033E23C /* Build configuration list for PBXProject "WorldlineConnectExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				"en-AU",
+				"ar-EG",
+				"vi-VN",
+				"ur-PK",
+				"uk-UA",
+				"tr-TR",
+				"th-TH",
+				"sv-SE",
+				"sw-KE",
+				"es-ES",
+				"es-CO",
+				"es-AR",
+				"sl-SI",
+				"ru-RU",
+				"ro-RO",
+				"pt-PT",
+				"pt-BR",
+				"pl-PL",
+				"fa-IR",
+				"nb-NO",
+				"ms-MY",
+				"lt-LT",
+				"lv-LV",
+				"ko-KR",
+				"ja-JP",
+				"it-IT",
+				"hu-HU",
+				"hi-IN",
+				"he-IL",
+				"el-GR",
+				"de-DE",
+				"de-CH",
+				"de-AT",
+				"fr-FR",
+				"fr-CA",
+				"fr-BE",
+				"nl-BE",
+				"nl-NL",
+				"fi-FI",
+				"et-EE",
+				"en-US",
+				"en-NZ",
+				"en-IE",
+				"en-CA",
+				"da-DK",
+				"cs-CZ",
+				"zh-Hans-CN",
+				"zh-Hant-HK",
+				nl,
+				fr,
+				es,
+				"en-GB",
+				pt,
+				it,
+				"zh-Hans",
+				"zh-Hant",
+				"es-MX",
+				de,
+				ja,
+				ko,
+				vi,
+				ru,
+				da,
+				fi,
+				nb,
+				sv,
+				pl,
+				tr,
+				ar,
+				ms,
+				th,
+				cs,
+				hu,
+				el,
+				uk,
+				he,
+				ro,
+			);
+			mainGroup = A351DCA6196296000033E23C;
+			productRefGroup = A351DCB0196296000033E23C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A351DCAE196296000033E23C /* WorldlineConnectExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A351DCAD196296000033E23C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A363FC591AA70C8200186592 /* WCAppLocalizable.strings in Resources */,
+				A351DCC5196296000033E23C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		398D89903C8C38578E5C9B45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorldlineConnectExample/Pods-WorldlineConnectExample-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/WorldlineConnectSDK/WorldlineConnectSDK/WorldlineConnectSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WorldlineConnectSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorldlineConnectExample/Pods-WorldlineConnectExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E6309AA247E971A4002740 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorldlineConnectExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A351DCAB196296000033E23C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3BB2CF4196D424E0022F63C /* WCMerchantLogoImageView.m in Sources */,
+				7321EB9F1F18AF3D006B66C4 /* WCBancontactProductViewController.m in Sources */,
+				736155F81F18C47300D9DF6C /* WCExternalAppStatusViewController.m in Sources */,
+				A351DD2A196296220033E23C /* WCErrorMessageTableViewCell.m in Sources */,
+				736156031F18EA0A00D9DF6C /* WCFormRowImage.m in Sources */,
+				A351DD27196296220033E23C /* WCAppDelegate.m in Sources */,
+				A351DD3F196296220033E23C /* WCSwitch.m in Sources */,
+				A301867A196FBE3200EC6150 /* WCFormRowTooltip.m in Sources */,
+				7333B7261F8B7B1500B0A81F /* WCFormRowDate.m in Sources */,
+				A351DD34196296220033E23C /* WCPaymentProductsTableRow.m in Sources */,
+				A3026BBC1962E88600BDE9EE /* WCSummaryTableHeaderView.m in Sources */,
+				F5FAC2391EC47B9A001351BD /* WCFormRowField.m in Sources */,
+				A351DD35196296220033E23C /* WCPaymentProductsTableSection.m in Sources */,
+				73AC76571F33142900BA563C /* WCFormRowReadonlyReview.m in Sources */,
+				A351DD36196296220033E23C /* WCPaymentProductsViewController.m in Sources */,
+				73814C501F1906DE00036D6F /* WCFormRowSmallLogo.m in Sources */,
+				A351DD39196296220033E23C /* WCPaymentProductViewController.m in Sources */,
+				A351DD3E196296220033E23C /* WCStartViewController.m in Sources */,
+				A351DD2B196296220033E23C /* WCFormRow.m in Sources */,
+				A351DD3B196296220033E23C /* WCPickerViewTableViewCell.m in Sources */,
+				A30C8CB9196AD3A200F1EDA3 /* WCLabelTableViewCell.m in Sources */,
+				A351DD47196296220033E23C /* WCViewFactory.m in Sources */,
+				A3E12FFA19F5375A008E7311 /* WCIntegerTextField.m in Sources */,
+				73AC765A1F3333AF00BA563C /* WCDetailedPickerViewCell.m in Sources */,
+				A351DD40196296220033E23C /* WCSwitchTableViewCell.m in Sources */,
+				7333B7291F8B7C6B00B0A81F /* WCDatePickerTableViewCell.m in Sources */,
+				73814C4D1F18FB3800036D6F /* WCLogoTableViewCell.m in Sources */,
+				A351DD38196296220033E23C /* WCPaymentProductTableViewCell.m in Sources */,
+				A351DD2C196296220033E23C /* WCFormRowList.m in Sources */,
+				73814C4A1F18FB2400036D6F /* WCSeparatorTableViewCell.m in Sources */,
+				A351DD44196296220033E23C /* WCTextFieldTableViewCell.m in Sources */,
+				A3F7E84D19F642B400FCD812 /* WCCurrencyTableViewCell.m in Sources */,
+				A30CB1F51963F723000192B3 /* WCEndViewController.m in Sources */,
+				A3BB2CED196C0E460022F63C /* WCFormRowErrorMessage.m in Sources */,
+				A351DD33196296220033E23C /* WCTooltipTableViewCell.m in Sources */,
+				A351DD42196296220033E23C /* WCTableViewCell.m in Sources */,
+				736155FF1F18CD2E00D9DF6C /* WCStatusView.m in Sources */,
+				A351DD2F196296220033E23C /* WCFormRowsConverter.m in Sources */,
+				A30CB1F11963E9B3000192B3 /* WCFormRowButton.m in Sources */,
+				736156091F18EFAE00D9DF6C /* WCFormRowSeparator.m in Sources */,
+				A3E12FFD19F5376D008E7311 /* WCFractionalTextField.m in Sources */,
+				A351DCBF196296000033E23C /* main.m in Sources */,
+				73814C531F190B3000036D6F /* WCSeparatorView.m in Sources */,
+				A351DD41196296220033E23C /* WCTableSectionConverter.m in Sources */,
+				A3E12FF419F5323F008E7311 /* WCFormRowCurrency.m in Sources */,
+				73814C471F18F4CE00036D6F /* WCImageTableViewCell.m in Sources */,
+				42974C7E1DC8ABD200B91814 /* WCPaymentProductsViewControllerTarget.m in Sources */,
+				A351DD31196296220033E23C /* WCFormRowTextField.m in Sources */,
+				A351DD3A196296220033E23C /* WCPickerView.m in Sources */,
+				73C6903E1F56EEC700560FD1 /* WCReadonlyReviewTableViewCell.m in Sources */,
+				A30C8CB2196ACFEF00F1EDA3 /* WCFormRowLabel.m in Sources */,
+				A30C8CB6196AD17500F1EDA3 /* WCLabel.m in Sources */,
+				A351DD29196296220033E23C /* WCButtonTableViewCell.m in Sources */,
+				736155FC1F18CAE800D9DF6C /* WCCheckMarkView.m in Sources */,
+				F59206F71EC48A9A0000B141 /* WCButton.m in Sources */,
+				A351DD43196296220033E23C /* WCTextField.m in Sources */,
+				A3E12FF719F5364D008E7311 /* WCFormRowWithInfoButton.m in Sources */,
+				A351DD30196296220033E23C /* WCFormRowSwitch.m in Sources */,
+				736156061F18EB4600D9DF6C /* WCFormRowQRCode.m in Sources */,
+				29CEFDD0A7B51E7EA8478E0A /* WCCoBrandsSelectionTableViewCell.m in Sources */,
+				29CEF72C43206D38FE5C1672 /* WCFormRowCoBrandsSelection.m in Sources */,
+				29CEFE47E7CE615D9DA6C57B /* WCCOBrandsExplanationTableViewCell.m in Sources */,
+				29CEFBDCF697210B2060494B /* WCFormRowCoBrandsExplanation.m in Sources */,
+				733256D91EDFF6660036F267 /* WCBoletoProductViewController.m in Sources */,
+				7399D4C31ECDA052005B888A /* WCCardProductViewController.m in Sources */,
+				29CEF5197E26824532029C01 /* WCPaymentProductInputData.m in Sources */,
+				E9BB365853118C3D6D389EF7 /* WCStartPaymentParsedJsonData.m in Sources */,
+				E9BB3AC5A61AB73DA9DD98BF /* WCJsonDialogViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A363FC261AA704DF00186592 /* WCAppLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A363FC271AA704DF00186592 /* en */,
+			);
+			name = WCAppLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A351DCD9196296000033E23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "A0A13123-5845-42BE-A813-90ED61E2B2CF";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A351DCDA196296000033E23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE = "A0A13123-5845-42BE-A813-90ED61E2B2CF";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A351DCDC196296000033E23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 953A05224E1E423E890E85DC /* Pods-WorldlineConnectExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = WorldlineConnectExample/WorldlineConnectExample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UTWYEN5FS2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorldlineConnectExample/WorldlineConnectExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"${SRCROOT}\"",
+				);
+				INFOPLIST_FILE = WorldlineConnectExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldline.connect.iOSExampleApp;
+				PRODUCT_NAME = WorldlineConnectExample;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "WorldlineConnectExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = WorldlineConnectSDK;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A351DCDD196296000033E23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB53E07B45B2C93A231624E3 /* Pods-WorldlineConnectExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = WorldlineConnectExample/WorldlineConnectExample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UTWYEN5FS2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorldlineConnectExample/WorldlineConnectExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"${SRCROOT}\"",
+				);
+				INFOPLIST_FILE = WorldlineConnectExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldline.connect.iOSExampleApp;
+				PRODUCT_NAME = WorldlineConnectExample;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "WorldlineConnectExample-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = WorldlineConnectSDK;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A351DCAA196296000033E23C /* Build configuration list for PBXProject "WorldlineConnectExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A351DCD9196296000033E23C /* Debug */,
+				A351DCDA196296000033E23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A351DCDB196296000033E23C /* Build configuration list for PBXNativeTarget "WorldlineConnectExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A351DCDC196296000033E23C /* Debug */,
+				A351DCDD196296000033E23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A351DCA7196296000033E23C /* Project object */;
+}
