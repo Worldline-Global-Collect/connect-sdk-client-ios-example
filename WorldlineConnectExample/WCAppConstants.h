@@ -22,5 +22,5 @@
 #define kWCCurrency             @"kWCCurrency"
 #define kWCBoletoBancarioId     @"1503"
 #define kWCBancontactId         @"3012"
-#define kWCApplicationIdentifier @"iOS Example Application/v2.0.1"
+#define kWCApplicationIdentifier @"iOS Example Application/v2.0.2"
 #endif
