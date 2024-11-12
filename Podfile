@@ -6,7 +6,7 @@ target 'WorldlineConnectExample' do
   # use_frameworks!
 
   # Pods for WorldlineConnectExample
-  pod 'WorldlineConnectSDK', '~> 6.1'
+  pod 'WorldlineConnectSDK', '~> 7.0'
   pod 'SVProgressHUD'
 
 end

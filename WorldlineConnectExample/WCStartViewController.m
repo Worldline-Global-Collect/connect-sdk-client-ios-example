@@ -51,6 +51,8 @@
 @property (strong, nonatomic) WCTextField *currencyCodeTextField;
 @property (strong, nonatomic) WCLabel *isRecurringLabel;
 @property (strong, nonatomic) WCSwitch *isRecurringSwitch;
+@property (strong, nonatomic) WCLabel *isInInstallmentsLabel;
+@property (strong, nonatomic) WCSwitch *isInInstallmentsSwitch;
 @property (strong, nonatomic) UIButton *payButton;
 @property (strong, nonatomic) WCLabel *groupMethodsLabel;
 @property (strong, nonatomic) UISwitch *groupMethodsSwitch;
@@ -222,6 +224,14 @@
     [self.containerView addSubview:self.isRecurringLabel];
     [self.containerView addSubview:self.isRecurringSwitch];
     
+    self.isInInstallmentsLabel = [self.viewFactory labelWithType:WCLabelType];
+    self.isInInstallmentsLabel.text = NSLocalizedStringFromTable(@"PaymentInInstallments", kWCAppLocalizable, @"Payment is in installments");
+    self.isInInstallmentsLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    self.isInInstallmentsSwitch = [self.viewFactory switchWithType:WCSwitchType];
+    self.isInInstallmentsSwitch.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.containerView addSubview:self.isInInstallmentsLabel];
+    [self.containerView addSubview:self.isInInstallmentsSwitch];
+    
     self.groupMethodsLabel = [self.viewFactory labelWithType:WCLabelType];
     self.groupMethodsLabel.text = NSLocalizedStringWithDefaultValue(@"GroupMethods", kWCAppLocalizable, [NSBundle bundleWithPath:kWCSDKBundlePath], @"Group payment products", @"");
     //groupMethodsLabel.text = NSLocalizedStringFromTable(@"GroupMethods", kWCAppLocalizable, @"Display payment methods as group");
@@ -237,7 +247,7 @@
     [self.payButton addTarget:self action:@selector(buyButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.containerView addSubview:self.payButton];
 
-    NSDictionary *views = NSDictionaryOfVariableBindings(_explanation, _clientSessionIdLabel, _clientSessionIdTextField, _customerIdLabel, _customerIdTextField, _baseURLLabel, _baseURLTextField, _assetsBaseURLLabel, _assetsBaseURLTextField, _jsonButton, _merchantIdLabel, _merchantIdTextField, _amountLabel, _amountTextField, _countryCodeLabel, _countryCodeTextField, _currencyCodeLabel, _currencyCodeTextField, _isRecurringLabel, _isRecurringSwitch, _payButton, _groupMethodsLabel, _groupMethodsSwitch, _parsableFieldsContainer, _containerView, _scrollView, superContainerView);
+    NSDictionary *views = NSDictionaryOfVariableBindings(_explanation, _clientSessionIdLabel, _clientSessionIdTextField, _customerIdLabel, _customerIdTextField, _baseURLLabel, _baseURLTextField, _assetsBaseURLLabel, _assetsBaseURLTextField, _jsonButton, _merchantIdLabel, _merchantIdTextField, _amountLabel, _amountTextField, _countryCodeLabel, _countryCodeTextField, _currencyCodeLabel, _currencyCodeTextField, _isRecurringLabel, _isRecurringSwitch, _isInInstallmentsLabel, _isInInstallmentsSwitch, _payButton, _groupMethodsLabel, _groupMethodsSwitch, _parsableFieldsContainer, _containerView, _scrollView, superContainerView);
     NSDictionary *metrics = @{@"fieldSeparator": @"24", @"groupSeparator": @"72"};
 
     // ParsableFieldsContainer Constraints
@@ -264,9 +274,10 @@
     [self.containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[_currencyCodeLabel]-|" options:0 metrics:nil views:views]];
     [self.containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[_currencyCodeTextField]-|" options:0 metrics:nil views:views]];
     [self.containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[_isRecurringLabel]-[_isRecurringSwitch]-|" options:NSLayoutFormatAlignAllCenterY metrics:nil views:views]];
+    [self.containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[_isInInstallmentsLabel]-[_isInInstallmentsSwitch]-|" options:NSLayoutFormatAlignAllCenterY metrics:nil views:views]];
     [self.containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[_groupMethodsLabel]-[_groupMethodsSwitch]-|" options:NSLayoutFormatAlignAllCenterY metrics:nil views:views]];
     [self.containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[_payButton]-|" options:0 metrics:nil views:views]];
-    [self.containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_explanation]-(fieldSeparator)-[_parsableFieldsContainer]-(fieldSeparator)-[_merchantIdLabel]-[_merchantIdTextField]-(groupSeparator)-[_amountLabel]-[_amountTextField]-(fieldSeparator)-[_countryCodeLabel]-[_countryCodeTextField]-(fieldSeparator)-[_currencyCodeLabel]-[_currencyCodeTextField]-(fieldSeparator)-[_isRecurringSwitch]-(fieldSeparator)-[_groupMethodsSwitch]-(fieldSeparator)-[_payButton]-|" options:0 metrics:metrics views:views]];
+    [self.containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_explanation]-(fieldSeparator)-[_parsableFieldsContainer]-(fieldSeparator)-[_merchantIdLabel]-[_merchantIdTextField]-(groupSeparator)-[_amountLabel]-[_amountTextField]-(fieldSeparator)-[_countryCodeLabel]-[_countryCodeTextField]-(fieldSeparator)-[_currencyCodeLabel]-[_currencyCodeTextField]-(fieldSeparator)-[_isRecurringSwitch]-(fieldSeparator)-[_isInInstallmentsSwitch]-(fieldSeparator)-[_groupMethodsSwitch]-(fieldSeparator)-[_payButton]-|" options:0 metrics:metrics views:views]];
 
     [self.view addConstraints:@[[NSLayoutConstraint constraintWithItem:superContainerView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0], [NSLayoutConstraint constraintWithItem:superContainerView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1 constant:0]]];
     [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[superContainerView]|" options:NSLayoutFormatAlignAllCenterY metrics:nil views:views]];
@@ -428,6 +439,10 @@
     #endif
 
     BOOL isRecurring = self.isRecurringSwitch.on;
+    
+    // Use this property to indicate whether the payment will be paid in instalments.
+    // This will be taken into account when determining the availability of credit cards when making an IIN details call.
+    BOOL isInInstallments = self.isInInstallmentsSwitch.on;
 
     // ***************************************************************************
     //
@@ -441,7 +456,7 @@
     //
     // ***************************************************************************
     WCPaymentAmountOfMoney *amountOfMoney = [[WCPaymentAmountOfMoney alloc] initWithTotalAmount:self.amountValue currencyCode:currencyCode];
-    self.context = [[WCPaymentContext alloc] initWithAmountOfMoney:amountOfMoney isRecurring:isRecurring countryCode:countryCode];
+    self.context = [[WCPaymentContext alloc] initWithAmountOfMoney:amountOfMoney isRecurring:isRecurring countryCode:countryCode isInstallments:isInInstallments];
 
     [self.session paymentItemsForContext:self.context groupPaymentProducts:self.groupMethodsSwitch.isOn success:^(WCPaymentItems *paymentItems) {
         [SVProgressHUD dismiss];
