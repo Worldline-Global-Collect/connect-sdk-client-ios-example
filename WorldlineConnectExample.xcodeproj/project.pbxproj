@@ -786,11 +786,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-WorldlineConnectExample/Pods-WorldlineConnectExample-resources.sh",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 				"${PODS_ROOT}/WorldlineConnectSDK/WorldlineConnectSDK/WorldlineConnectSDK.bundle",
+				"${PODS_ROOT}/WorldlineConnectSDK/WorldlineConnectSDK/PrivacyInfo.xcprivacy",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WorldlineConnectSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PrivacyInfo.xcprivacy",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
