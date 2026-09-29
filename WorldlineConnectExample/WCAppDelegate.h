@@ -9,7 +9,4 @@
 #import <UIKit/UIKit.h>
 
 @interface WCAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
 @end

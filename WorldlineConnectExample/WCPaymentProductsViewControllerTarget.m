@@ -6,7 +6,7 @@
 //  Copyright © 2017 Worldline Global Collect. All rights reserved.
 //
 
-#import <SVProgressHUD/SVProgressHUD.h>
+#import <WorldlineConnectExample/WCProgressView.h>
 #import <WorldlineConnectExample/WCPaymentProductsViewControllerTarget.h>
 #import <WorldlineConnectSDK/WCPaymentProduct.h>
 #import <WorldlineConnectSDK/WCPaymentProductGroup.h>
@@ -204,7 +204,7 @@
 
 - (void)didSelectPaymentItem:(NSObject <WCBasicPaymentItem> *)paymentItem accountOnFile:(WCAccountOnFile *)accountOnFile;
 {
-    [SVProgressHUD showWithStatus:NSLocalizedStringFromTableInBundle(@"gc.app.general.loading.body", kWCSDKLocalizable, [NSBundle bundleWithPath:kWCSDKBundlePath], nil)];
+    [WCProgressView showWithStatus:NSLocalizedStringFromTableInBundle(@"gc.app.general.loading.body", kWCSDKLocalizable, [NSBundle bundleWithPath:kWCSDKBundlePath], nil)];
     
     // ***************************************************************************
     //
@@ -228,7 +228,7 @@
             if ([paymentItem.identifier isEqualToString:kWCApplePayIdentifier]) {
                 [self showApplePayPaymentItem:paymentProduct];
             } else {
-                [SVProgressHUD dismiss];
+                [WCProgressView dismiss];
                 if ([paymentProduct.identifier isEqualToString:kWCBancontactId]) {
                     [self bancontactJSONWithSuccess:  ^ void (NSDictionary<NSString *, NSObject *> *json) {
                         WCBancontactProductViewController *vc = [[WCBancontactProductViewController alloc]init];
@@ -254,17 +254,17 @@
                 }
             }
         } failure:^(NSError *error) {
-            [SVProgressHUD dismiss];
+            [WCProgressView dismiss];
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedStringFromTable(@"ConnectionErrorTitle", kWCAppLocalizable, @"Title of the connection error dialog.") message:NSLocalizedStringFromTable(@"PaymentProductErrorExplanation", kWCAppLocalizable, nil) delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
         }];
     }
     else if ([paymentItem isKindOfClass:[WCBasicPaymentProductGroup class]]) {
         [self.session paymentProductGroupWithId:paymentItem.identifier context:self.context success:^(WCPaymentProductGroup *paymentProductGroup) {
-            [SVProgressHUD dismiss];
+            [WCProgressView dismiss];
             [self showPaymentItem:paymentProductGroup accountOnFile:accountOnFile];
         }                               failure:^(NSError *error) {
-            [SVProgressHUD dismiss];
+            [WCProgressView dismiss];
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedStringFromTable(@"ConnectionErrorTitle", kWCAppLocalizable, @"Title of the connection error dialog.") message:NSLocalizedStringFromTable(@"PaymentProductErrorExplanation", kWCAppLocalizable, nil) delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
         }];
@@ -300,7 +300,7 @@
 
 - (void)showApplePayPaymentItem:(WCPaymentProduct *)paymentProduct {
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0") && [PKPaymentAuthorizationViewController canMakePayments]) {
-        [SVProgressHUD showWithStatus:NSLocalizedStringFromTableInBundle(@"gc.app.general.loading.body", kWCSDKLocalizable, [NSBundle bundleWithPath:kWCSDKBundlePath], nil)];
+        [WCProgressView showWithStatus:NSLocalizedStringFromTableInBundle(@"gc.app.general.loading.body", kWCSDKLocalizable, [NSBundle bundleWithPath:kWCSDKBundlePath], nil)];
         
         // ***************************************************************************
         //
@@ -313,9 +313,9 @@
         
         [self.session paymentProductNetworksForProductId:kWCApplePayIdentifier context:self.context success:^(WCPaymentProductNetworks *paymentProductNetworks) {
             [self showApplePaySheetForPaymentProduct:paymentProduct withAvailableNetworks:paymentProductNetworks];
-            [SVProgressHUD dismiss];
+            [WCProgressView dismiss];
         } failure:^(NSError *error) {
-            [SVProgressHUD dismiss];
+            [WCProgressView dismiss];
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedStringFromTable(@"ConnectionErrorTitle", kWCAppLocalizable, @"Title of the connection error dialog.") message:NSLocalizedStringFromTable(@"PaymentProductNetworksErrorExplanation", kWCAppLocalizable, nil) delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
         }];
@@ -400,9 +400,9 @@
 
 - (void)didSubmitPaymentRequest:(WCPaymentRequest *)paymentRequest success:(void (^)())succes failure:(void (^)())failure
 {
-    [SVProgressHUD showWithStatus:NSLocalizedStringFromTableInBundle(@"gc.app.general.loading.body", kWCSDKLocalizable, [NSBundle bundleWithPath:kWCSDKBundlePath], nil)];
+    [WCProgressView showWithStatus:NSLocalizedStringFromTableInBundle(@"gc.app.general.loading.body", kWCSDKLocalizable, [NSBundle bundleWithPath:kWCSDKBundlePath], nil)];
     [self.session preparePaymentRequest:paymentRequest success:^(WCPreparedPaymentRequest *preparedPaymentRequest) {
-        [SVProgressHUD dismiss];
+        [WCProgressView dismiss];
         
         // ***************************************************************************
         //
@@ -417,7 +417,7 @@
             succes();
         }
     } failure:^(NSError *error) {
-        [SVProgressHUD dismiss];
+        [WCProgressView dismiss];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedStringFromTable(@"ConnectionErrorTitle", kWCAppLocalizable, @"Title of the connection error dialog.") message:NSLocalizedStringFromTable(@"SubmitErrorExplanation", kWCAppLocalizable, nil) delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
         if (failure != nil) {

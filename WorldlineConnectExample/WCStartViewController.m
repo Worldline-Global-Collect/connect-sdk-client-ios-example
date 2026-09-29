@@ -7,7 +7,6 @@
 //
 
 #import <PassKit/PassKit.h>
-#import <SVProgressHUD/SVProgressHUD.h>
 
 #import <WorldlineConnectExample/WCAppConstants.h>
 #import <WorldlineConnectSDK/WCSDKConstants.h>
@@ -20,6 +19,7 @@
 #import <WorldlineConnectExample/WCEndViewController.h>
 #import <WorldlineConnectExample/WCPaymentProductsViewControllerTarget.h>
 #import <WorldlineConnectExample/WCStartPaymentParsedJsonData.h>
+#import <WorldlineConnectExample/WCProgressView.h>
 
 #import <WorldlineConnectSDK/WCPaymentAmountOfMoney.h>
 #import <WorldlineConnectSDK/WCPaymentProductGroup.h>
@@ -365,7 +365,7 @@
         [NSException raise:@"Invalid sender" format:@"Sender %@ is invalid", sender];
     }
 
-    [SVProgressHUD showWithStatus:NSLocalizedStringFromTableInBundle(@"gc.app.general.loading.body", kWCSDKLocalizable, [NSBundle bundleWithPath:kWCSDKBundlePath], nil)];
+    [WCProgressView showWithStatus:NSLocalizedStringFromTableInBundle(@"gc.app.general.loading.body", kWCSDKLocalizable, [NSBundle bundleWithPath:kWCSDKBundlePath], nil)];
 
     NSString *clientSessionId = self.clientSessionIdTextField.text;
     [StandardUserDefaults setObject:clientSessionId forKey:kWCClientSessionId];
@@ -401,7 +401,7 @@
     //
     // ***************************************************************************
     if (![self checkURL:baseURL]) {
-        [SVProgressHUD dismiss];
+        [WCProgressView dismiss];
         NSMutableArray<NSString *> *components;
         if (@available(iOS 7.0, *)) {
             NSURLComponents *finalComponents = [NSURLComponents componentsWithString:baseURL];
@@ -459,10 +459,10 @@
     self.context = [[WCPaymentContext alloc] initWithAmountOfMoney:amountOfMoney isRecurring:isRecurring countryCode:countryCode isInstallments:isInInstallments];
 
     [self.session paymentItemsForContext:self.context groupPaymentProducts:self.groupMethodsSwitch.isOn success:^(WCPaymentItems *paymentItems) {
-        [SVProgressHUD dismiss];
+        [WCProgressView dismiss];
         [self showPaymentProductSelection:paymentItems];
     } failure:^(NSError *error) {
-        [SVProgressHUD dismiss];
+        [WCProgressView dismiss];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedStringFromTable(@"ConnectionErrorTitle", kWCAppLocalizable, @"Title of the connection error dialog.") message:NSLocalizedStringFromTable(@"PaymentProductsErrorExplanation", kWCAppLocalizable, nil) delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     }];
@@ -479,7 +479,7 @@
     paymentProductSelection.amount = self.amountValue;
     paymentProductSelection.currencyCode = self.context.amountOfMoney.currencyCode;
     [self.navigationController pushViewController:paymentProductSelection animated:YES];
-    [SVProgressHUD dismiss];
+    [WCProgressView dismiss];
 }
 
 - (void)presentJsonDialog
